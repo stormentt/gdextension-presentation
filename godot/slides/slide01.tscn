@@ -39,7 +39,7 @@ theme_override_fonts/normal_font = SubResource("FontVariation_oya7y")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
 text = "[ul]
-GDScript is perfectly capable
+GDScript
 [ul]
 Easy to use. It \"Just Works\"
 Nice debugger
@@ -48,11 +48,12 @@ Performant
 GDScript just calls well-optimized engine functions
 [color=#f57389]Premature optimization is the root of all evil.[/color]
 [/ul]
+[/ul]
 C#
 [ul]
 Popular with game devs outside Godot
 Can't be exported to web in Godot 4 (YET)
 [ul]Either use Godot 3 or wait for Godot 4 support :([/ul]
 [/ul]
-Either is fine. Don't worry about it; just make something.
+[color=#f57389]Either is fine. Don't worry about it; just make something.[/color]
 [/ul]"
