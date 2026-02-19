@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://2nydkr5u4t78" path="res://assets/gdextension.png" id="1_wk3wm"]
 [ext_resource type="Texture2D" uid="uid://dqxwgxjuaeff7" path="res://assets/new node menu.png" id="2_djjpe"]
 [ext_resource type="Texture2D" uid="uid://b00kx7hu2stu7" path="res://assets/gdscript.png" id="3_8popd"]
+[ext_resource type="Texture2D" uid="uid://0iauvxysfek" path="res://assets/scene tree.png" id="4_2405q"]
 [ext_resource type="Texture2D" uid="uid://ch6oji4tjaysn" path="res://assets/properties.png" id="4_y32mp"]
 
 [node name="Slide03" type="Control" unique_id=17528498]
@@ -27,28 +28,36 @@ theme_override_constants/margin_bottom = 20
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer" unique_id=227779263]
 layout_mode = 2
-columns = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 20
+columns = 4
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=1355799336]
 layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("1_wk3wm")
-
-[node name="TextureRect2" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=1059968103]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("2_djjpe")
 
 [node name="TextureRect3" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=92562270]
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 4
 size_flags_vertical = 0
 texture = ExtResource("3_8popd")
 
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=1059968103]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("2_djjpe")
+
+[node name="TextureRect5" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=1937015788]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("4_2405q")
+
 [node name="TextureRect4" type="TextureRect" parent="MarginContainer/GridContainer" unique_id=492333763]
 layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("4_y32mp")

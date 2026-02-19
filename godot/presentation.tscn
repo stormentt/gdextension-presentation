@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b5unvdbh3jpr" path="res://slides/slide03.tscn" id="5_dek86"]
 [ext_resource type="PackedScene" uid="uid://coq5xc42qs3gy" path="res://slides/slide04.tscn" id="6_lga1w"]
 [ext_resource type="PackedScene" uid="uid://cglebqvkqr3ot" path="res://slides/slide05.tscn" id="7_xnxvr"]
+[ext_resource type="PackedScene" uid="uid://bo7ra1wstef2l" path="res://slides/slide06.tscn" id="8_cjjyn"]
 
 [node name="Presentation" type="Control" unique_id=763671434]
 layout_mode = 3
@@ -15,7 +16,7 @@ anchors_preset = 0
 script = ExtResource("1_w5moa")
 
 [node name="PresentationInfo" type="PresentationInfo" parent="." unique_id=655983851 node_paths=PackedStringArray("target")]
-deck = Array[PackedScene]([ExtResource("1_5buq6"), ExtResource("3_03nak"), ExtResource("4_vbkje"), ExtResource("5_dek86"), ExtResource("6_lga1w"), ExtResource("7_xnxvr")])
+deck = Array[PackedScene]([ExtResource("1_5buq6"), ExtResource("3_03nak"), ExtResource("4_vbkje"), ExtResource("5_dek86"), ExtResource("6_lga1w"), ExtResource("7_xnxvr"), ExtResource("8_cjjyn")])
 target = NodePath("../Slide")
 
 [node name="Background" type="TextureRect" parent="." unique_id=611893225]
