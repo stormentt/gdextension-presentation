@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://drwrtvpa1vmrh"]
+
+[ext_resource type="Theme" uid="uid://blyh5f2s2n260" path="res://presentation_theme.tres" id="1_ipwrq"]
+[ext_resource type="FontFile" uid="uid://q8d25xw4f1ot" path="res://assets/Montserrat-VariableFont_wght.ttf" id="2_1a4ir"]
+
+[sub_resource type="FontVariation" id="FontVariation_oya7y"]
+base_font = ExtResource("2_1a4ir")
+variation_opentype = {
+2003265652: 500
+}
+
+[node name="Slide01" type="Control" unique_id=85663400]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=669910647]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = 1900.0
+offset_bottom = 72.0
+theme = ExtResource("1_ipwrq")
+theme_override_font_sizes/font_size = 48
+text = "GDSCRIPT & C#"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1695052551]
+custom_minimum_size = Vector2(1880, 0)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 110.0
+offset_right = 1900.0
+offset_bottom = 950.0
+theme_override_colors/default_color = Color(0.68235296, 0.7137255, 0.8352941, 1)
+theme_override_fonts/normal_font = SubResource("FontVariation_oya7y")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[ul]
+GDScript is perfectly capable
+[ul]
+Easy to use. It \"Just Works\"
+Nice debugger
+Performant
+[ul]
+GDScript just calls well-optimized engine functions
+[color=#f57389]Premature optimization is the root of all evil.[/color]
+[/ul]
+C#
+[ul]
+Popular with game devs outside Godot
+Can't be exported to web in Godot 4 (YET)
+[ul]Either use Godot 3 or wait for Godot 4 support :([/ul]
+[/ul]
+Either is fine. Don't worry about it; just make something.
+[/ul]"

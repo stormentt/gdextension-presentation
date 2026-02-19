@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b4ncrctbghtdv"]
+
+[ext_resource type="PackedScene" uid="uid://doiny13f5q5g1" path="res://slides/slide00.tscn" id="1_5buq6"]
+[ext_resource type="Texture2D" uid="uid://5sql0a1cc3o6" path="res://assets/presentation background.png" id="1_rjcjf"]
+[ext_resource type="Script" uid="uid://dfl17rjw102vf" path="res://presentation.gd" id="1_w5moa"]
+[ext_resource type="PackedScene" uid="uid://drwrtvpa1vmrh" path="res://slides/slide01.tscn" id="3_03nak"]
+[ext_resource type="PackedScene" uid="uid://c8ry181w2u6r8" path="res://slides/slide02.tscn" id="4_vbkje"]
+[ext_resource type="PackedScene" uid="uid://b5unvdbh3jpr" path="res://slides/slide03.tscn" id="5_dek86"]
+[ext_resource type="PackedScene" uid="uid://coq5xc42qs3gy" path="res://slides/slide04.tscn" id="6_lga1w"]
+[ext_resource type="PackedScene" uid="uid://cglebqvkqr3ot" path="res://slides/slide05.tscn" id="7_xnxvr"]
+
+[node name="Presentation" type="Control" unique_id=763671434]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_w5moa")
+
+[node name="PresentationInfo" type="PresentationInfo" parent="." unique_id=655983851 node_paths=PackedStringArray("target")]
+deck = Array[PackedScene]([ExtResource("1_5buq6"), ExtResource("3_03nak"), ExtResource("4_vbkje"), ExtResource("5_dek86"), ExtResource("6_lga1w"), ExtResource("7_xnxvr")])
+target = NodePath("../Slide")
+
+[node name="Background" type="TextureRect" parent="." unique_id=611893225]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_rjcjf")
+expand_mode = 2
+
+[node name="Slide" type="Control" parent="." unique_id=1656641151]
+custom_minimum_size = Vector2(1920, 1080)
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

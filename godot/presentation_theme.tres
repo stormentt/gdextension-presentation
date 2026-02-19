@@ -1,0 +1,13 @@
+[gd_resource type="Theme" format=3 uid="uid://blyh5f2s2n260"]
+
+[ext_resource type="FontFile" uid="uid://q8d25xw4f1ot" path="res://assets/Montserrat-VariableFont_wght.ttf" id="1_7ylqb"]
+
+[sub_resource type="FontVariation" id="FontVariation_lpx0e"]
+base_font = ExtResource("1_7ylqb")
+variation_opentype = {
+2003265652: 700
+}
+
+[resource]
+default_font = SubResource("FontVariation_lpx0e")
+default_font_size = 18
